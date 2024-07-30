@@ -1,0 +1,30 @@
+/* Header.css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, white, #ffffff2d);
+  transition: background 0.3s ease; /* Smooth transition */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  padding: 0;
+}
+
+.header.scrolled {
+  background-color: var(--background-color); 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-container .logo-image {
+  max-height: 50px; /* Adjust logo size */
+}
+
+@media (max-width: 768px) {
+  
+} 

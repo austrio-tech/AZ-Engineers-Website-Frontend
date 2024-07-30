@@ -1,0 +1,31 @@
+/* IntroVideo.css */
+.intro-video {
+  position: relative; /* Ensure the container is positioned correctly */
+  width: calc(100%-5pc);
+  top: 0;
+  height: 99vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflow to keep the video contained */
+  border: 2px solid var(--primary-color);
+  margin: 1px auto;
+}
+
+.intro-video__container {
+  position: absolute; /* Position container to overlay */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-video__video {
+  position: absolute; /* Position video to cover the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container area */
+  z-index: -1; /* Place video behind other content */
+}

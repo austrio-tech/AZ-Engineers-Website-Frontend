@@ -1,0 +1,25 @@
+/* App.css */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+*:focus-visible{
+  outline: none;
+}
