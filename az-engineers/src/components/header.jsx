@@ -1,9 +1,9 @@
 // components/Header.js
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import React, { useState, useEffect } from "react";
+// import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logos/Horizontal_Logo_No_BG.png";
-import '../style/Header.css';
+import "../style/Header.css";
 import Navbar from "./Navbar";
 
 const Header = () => {
@@ -21,15 +21,19 @@ const Header = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+    <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
         <div className="logo-container">
-          <img src={logo} alt="Construction Company Logo" className="logo-image" />
+          <img
+            src={logo}
+            alt="Construction Company Logo"
+            className="logo-image"
+          />
         </div>
         <Navbar toggleMenu={toggleMenu} menuOpen={menuOpen} />
         <div className="menu-toggle" onClick={toggleMenu}>
