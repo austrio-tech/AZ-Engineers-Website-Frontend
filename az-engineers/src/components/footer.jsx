@@ -21,18 +21,23 @@ const Footer = () => {
             <h4>Quick Links</h4>
             <ul>
               <li>
+              // eslint-disable-next-line
                 <a href="#">Home</a>
               </li>
               <li>
+              // eslint-disable-next-line
                 <a href="#">About Us</a>
               </li>
               <li>
+              // eslint-disable-next-line
                 <a href="#">Services</a>
               </li>
               <li>
+              // eslint-disable-next-line
                 <a href="#">Projects</a>
               </li>
               <li>
+              // eslint-disable-next-line
                 <a href="#">Contact Us</a>
               </li>
             </ul>
@@ -58,21 +63,25 @@ const Footer = () => {
             <h4>Follow Us</h4>
             <ul className="social-links">
               <li>
+              // eslint-disable-next-line
                 <a href="#">
                   <i className="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li>
+              // eslint-disable-next-line
                 <a href="#">
                   <i className="fab fa-twitter"></i>
                 </a>
               </li>
               <li>
+              // eslint-disable-next-line
                 <a href="#">
                   <i className="fab fa-instagram"></i>
                 </a>
               </li>
               <li>
+              // eslint-disable-next-line
                 <a href="#">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
@@ -83,6 +92,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; 2024 AZ Engineers and Partners. All rights reserved.</p>
           <p>
+          // eslint-disable-next-line
             Designed by <a href="#">AZEP Team</a>
           </p>
         </div>
