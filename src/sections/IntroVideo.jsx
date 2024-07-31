@@ -1,6 +1,6 @@
 // components/IntroVideo.js
 import React from "react";
-import "../style/IntroVideo.css";
+import "./style/IntroVideo.css";
 import introVid from "../assets/IntroVideo.mp4";
 
 const IntroVideo = () => {
@@ -13,7 +13,7 @@ const IntroVideo = () => {
         </video>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default IntroVideo;

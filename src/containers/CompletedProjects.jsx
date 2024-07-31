@@ -1,6 +1,6 @@
 // components/CompletedProjects.js
 import React from 'react';
-import '../style/Projects.css';
+import './style/Projects.css';
 
 const CompletedProjects = () => {
   return (

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logos/Horizontal_Logo_No_BG.png";
-import "../style/Header.css";
+import "./style/Header.css";
 import Navbar from "./Navbar";
 
 const Header = () => {

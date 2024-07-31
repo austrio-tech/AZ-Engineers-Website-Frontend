@@ -1,0 +1,22 @@
+.card {
+  width: 190px;
+  height: 254px;
+  background: rgba(211, 211, 211, 0.199);
+  position: absolute;
+  transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+  transform-origin: left bottom; /* Ensure the rotation origin is the left bottom corner */
+  text-align: left;
+}
+
+.main {
+  display: grid;
+  height: 50vmax;
+  place-items: center;
+  position: relative;
+}
+/* 
+.card.selected {
+  z-index: 4; 
+} */

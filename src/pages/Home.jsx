@@ -2,18 +2,22 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import IntroVideo from '../sections/IntroVideo';
+import CoreValuesSection from "../sections/CoreValuesSection";
 import Services from '../containers/Services';
 import CompletedProjects from '../containers/CompletedProjects';
 import CurrentProjects from '../containers/CurrentProjects';
 import About from '../containers/About';
 import Address from '../containers/Address';
-import '../style/Home.css';
+import './style/Home.css'; 
 
 const Home = () => {
   return (
     <div className="home">
       <Fade bottom>
         <IntroVideo />
+      </Fade>
+      <Fade left>
+      <CoreValuesSection />
       </Fade>
       <Fade bottom>
         <Services />

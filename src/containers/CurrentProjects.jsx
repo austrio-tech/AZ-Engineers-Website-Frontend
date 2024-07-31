@@ -1,6 +1,6 @@
 // components/CurrentProjects.js
 import React from 'react';
-import '../style/Projects.css';
+import './style/Projects.css';
 
 const CurrentProjects = () => {
   return (

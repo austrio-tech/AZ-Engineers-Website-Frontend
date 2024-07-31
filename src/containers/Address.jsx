@@ -1,6 +1,6 @@
 // components/Address.js
 import React from 'react';
-import '../style/Address.css';
+import './style/Address.css';
 
 const Address = () => {
   return (

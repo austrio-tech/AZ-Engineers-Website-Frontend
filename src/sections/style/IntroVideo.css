@@ -1,7 +1,7 @@
 /* IntroVideo.css */
 .intro-video {
   position: relative; /* Ensure the container is positioned correctly */
-  width: calc(100%-5pc);
+  width: calc(100%-5px);
   top: 0;
   height: 99vh; /* Full viewport height */
   overflow: hidden; /* Hide overflow to keep the video contained */

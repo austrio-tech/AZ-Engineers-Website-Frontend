@@ -1,7 +1,7 @@
 // components/BackToTopButton.js
 import React, { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
-import "../../style/BackToTopButton.css";
+import "./style/BackToTopButton.css";
 
 const BackToTopButton = () => {
   const [visible, setVisible] = useState(false);
