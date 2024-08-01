@@ -54,7 +54,12 @@ const CardComponent = () => {
 
   return (
     <div className="main-container">
-      <div className="header-container">Our <div className="headingTitle">Core Values</div></div>
+      <div className="header-container">
+        Our{" "}
+        <div className="headingTitle">
+          Core <br /> Values
+        </div>
+      </div>
       <div className="cards-container">
         {cards?.map((card, idx) => {
           const rotationAngle = 0.5 * (-(cards.length / 2) + card.index + 1);

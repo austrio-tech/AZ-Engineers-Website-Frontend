@@ -2,24 +2,31 @@
   display: flex;
   justify-content: right;
   /* align-items: center; */
-  padding: 200px 20px; 
+  padding: 200px 20px 400px 20px;
   flex-wrap: wrap;
   gap: 20px; /* Add some spacing between cards */
   position: relative;
   /* padding: 20px; */
   background-color: #f8f8f8;
-  height: 80vh;
+  /* height: 80vh; */
 }
 
 .header-container {
   flex: 1;
-  font-size: 46px;
+  font-size: 72px;
+  padding-left: 40px;
+  text-decoration: underline;
   font-weight: bold;
   color: var(--primary-color);
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 5px;
   text-align: left;
 }
 .headingTitle {
   color: var(--heading-color);
+  text-decoration: underline;
+  text-decoration-color: var(--heading-color);
+  text-decoration-thickness: 5px;
   display: inline;
 }
 
