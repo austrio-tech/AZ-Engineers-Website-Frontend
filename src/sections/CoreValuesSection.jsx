@@ -53,37 +53,48 @@ const CardComponent = () => {
   }, []);
 
   return (
-    <div className="main">
-      {cards?.map((card, idx) => {
-        const rotationAngle = 0.5 * (-(cards.length / 2) + card.index + 1);
-        const translateX = 30 * (card.index - cards.length / 2);
-        const translateY = 60 * (card.index - cards.length / 2);
+    <div className="main-container">
+      <div className="header-container">Our <div className="headingTitle">Core Values</div></div>
+      <div className="cards-container">
+        {cards?.map((card, idx) => {
+          const rotationAngle = 0.5 * (-(cards.length / 2) + card.index + 1);
+          const translateX = 30 * (card.index - cards.length / 2);
+          const translateY = 60 * (card.index - cards.length / 2);
 
-        return (
-          <div
-            key={card.n}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            className={`card ${hovered ? "hovered" : ""}`}
-            style={{
-              backgroundColor: colors[colors.length - card.index - 1],
-              transform: hovered
-                ? `translateX(${translateX}px) translateY(${translateY}px) rotate(${rotationAngle}deg)`
-                : `translateX(${translateX / 10}px) translateY(${
-                    translateY / 10
-                  }px) rotate(${rotationAngle / 10}deg)`,
-              zIndex: hovered ? cards.length - 1 : card.index,
-              transition:
-                "transform 0.3s ease-in-out, z-index 1s ease-in-out, box-shadow 0.3s",
-            }}
-            onClick={() => handleCardClick(card.index)}
-          >
-            <h3 className="cardNumber">{card.number}</h3>
-            <h2 className="cardTitle">{card.title}</h2>
-            <p>{card.description}</p>
-          </div>
-        );
-      })}
+          return (
+            <div
+              key={card.number}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className={`card ${hovered ? "hovered" : ""}`}
+              style={{
+                backgroundColor:
+                  colors[
+                    colors.length -
+                      card.index -
+                      1 -
+                      (colors.length - cards.length)
+                  ],
+                transform: hovered
+                  ? `translateX(${translateX}px) translateY(${translateY}px) rotate(${rotationAngle}deg)`
+                  : `translateX(${translateX / 10}px) translateY(${
+                      translateY / 10
+                    }px) rotate(${rotationAngle / 10}deg)`,
+                zIndex: hovered ? cards.length - 1 : card.index,
+                transition:
+                  "transform 0.3s ease-in-out, z-index 0.3s ease, box-shadow 0.3s",
+              }}
+              onClick={() => handleCardClick(card.index)}
+            >
+              <div className="cardHead">
+                <h3 className="cardNumber">{card.number}</h3>
+                <h2 className="cardTitle">{card.title}</h2>
+              </div>
+              <p className="cardDescription">{card.description}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
