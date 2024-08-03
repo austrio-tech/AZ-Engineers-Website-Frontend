@@ -1,0 +1,55 @@
+.contact-us {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #555;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.map-container {
+  flex: 1;
+  max-width: 700px;
+  position: relative;
+}
+
+.map-container iframe {
+  border: 0;
+  border-radius: 8px;
+}

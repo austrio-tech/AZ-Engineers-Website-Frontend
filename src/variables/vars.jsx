@@ -31,7 +31,21 @@ export const coreValues = [
     number: "01",
     title: "Cost-competitive innovation",
     description:
-      "Our clients demand cost-competitive solutions. Every day we strive to establish methods and procedures aimed at increasing our productivity at site and in the office. We continually invest in new tools that allow us to drive cost and schedule certainty and to optimize efficiency. Our connections with the most cost-efficient suppliers globally enable our clients to enjoy the most cost-effective solution without having to compromise on quality.",
+      "Our clients demand cost-effective solutions. We continually develop methods to boost productivity both on-site and in the office. By investing in new tools and partnering with cost-efficient global suppliers, we ensure our clients receive high-quality solutions that optimize efficiency and maintain budget certainty.",
     index: 0,
   },
 ];
+
+export const contactInfo = {
+  emailContact: {
+    Value: "info@azengineers.com",
+    Href: "mailto:info@azengineers.com",
+  },
+  phone1: { Value: "+968 244 955 94", Href: "tel:+96824495594" },
+  phone2: { Value: "+968 244 955 98", Href: "tel:+96824495598" },
+  address: {
+    Value:
+      "Office No. 31 & 34 Building 1/344 Jami Al Akbar Street Ghala Industrial Area Bousher Muscat Sultanate Of Oman",
+    Href: "https://maps.app.goo.gl/whogSJbMuNm6fFpU8",
+  },
+};

@@ -1,16 +1,23 @@
-.main-container {
-  padding: 100px 0;
+/* .main-container {
+  display: flex;
+  justify-content: right;
+  padding: 200px 20px 400px 20px;
+  flex-wrap: wrap;
+  gap: 20px; 
+  position: relative;
   background-color: #f8f8f8;
 }
 
 .headingContainer {
+  flex: 1;
   font-size: 72px;
-  padding-bottom: 40px;
+  padding-left: 40px;
   text-decoration: underline;
   font-weight: bold;
   color: var(--primary-color);
   text-decoration-color: var(--primary-color);
   text-decoration-thickness: 5px;
+  text-align: left;
 }
 .headingTitle {
   color: var(--heading-color);
@@ -20,11 +27,29 @@
   display: inline;
 }
 
-.card-container {
-  gap: 16px;
-  padding: 16px;
+.cards-container {
+  position: relative;
+  flex: 1;
 }
 
+.card {
+  width: 440px;
+  height: 300px;
+  background: rgba(211, 211, 211, 0.199);
+  position: absolute;
+  transition: transform 0.3s ease-in-out, z-index 0.3s ease,
+    box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+  transform-origin: left bottom;
+  text-align: left;
+  padding: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .cardNumber {
   color: var(--secondary-color);
 }
@@ -50,4 +75,4 @@
 
 .card.hovered {
   z-index: 10;
-}
+} */

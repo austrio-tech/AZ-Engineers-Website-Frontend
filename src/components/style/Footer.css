@@ -6,7 +6,7 @@
   text-align: left;
 }
 
-.footer .container {
+.footer .footerContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
