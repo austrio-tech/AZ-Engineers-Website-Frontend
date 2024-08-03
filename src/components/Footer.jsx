@@ -1,6 +1,7 @@
 // components/Footer.js
 import React from "react";
 import "./style/Footer.css";
+import { contactInfo } from "../variables/vars";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
@@ -37,21 +38,22 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-col">
+          <div className="footer-col noUnderline">
             <h4>Contact Us</h4>
             <p>
-              Office No. 31 & 34 Building 1/344 Jami Al Akbar Street Ghala
-              Industrial Area Bousher Muscat Sultanate Of Oman
+              <a href={contactInfo.address.Href}>{contactInfo.address.Value}</a>
             </p>
             <p>
               Phone: <br />
-              <a href="tel:+96824495594">+968 244 955 94</a>
+              <a href={contactInfo.phone1.Href}>{contactInfo.phone1.Value}</a>
               <br />
-              <a href="tel:+96824495598">+968 244 955 98</a>
+              <a href={contactInfo.phone2.Href}>{contactInfo.phone2.Value}</a>
             </p>
             <p>
               Email:{" "}
-              <a href="mailto:info@azengineers.com">info@azengineers.com</a>
+              <a href={contactInfo.emailContact.Href}>
+                {contactInfo.emailContact.Value}
+              </a>
             </p>
           </div>
           <div className="footer-col">
