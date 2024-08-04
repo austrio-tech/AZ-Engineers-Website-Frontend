@@ -7,7 +7,7 @@ import Services from '../containers/Services';
 import CompletedProjects from '../containers/CompletedProjects';
 import CurrentProjects from '../containers/CurrentProjects';
 import About from '../containers/About';
-import Contact from '../containers/Contact';
+import Contact from '../sections/Contact';
 import Address from '../containers/Address';
 import './style/Home.css'; 
 
@@ -51,7 +51,7 @@ const Home = () => {
       <Fade bottom>
         <IntroVideo />
       </Fade>
-      <Fade left>
+      <Fade bottom>
       <CoreValuesSection />
       </Fade>
       <Fade bottom>

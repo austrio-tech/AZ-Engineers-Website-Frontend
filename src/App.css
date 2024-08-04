@@ -1,8 +1,12 @@
 /* App.css */
 
-*{
+* {
   padding: 0;
   margin: 0;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard syntax */
 }
 
 .App {
@@ -15,8 +19,12 @@
   margin: 0 auto;
 }
 
-.noUnderline *{
+.noUnderline * {
   text-decoration: none;
+}
+
+.headGap {
+  height: var(--header-height);
 }
 
 h1,
@@ -24,6 +32,6 @@ h2 {
   color: #333;
 }
 
-*:focus-visible{
+*:focus-visible {
   outline: none;
 }

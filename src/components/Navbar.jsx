@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './style/Navbar.css'; // Import your CSS file
+import profilePDF from "../assets/pdfs/AZEP Profile 2023.pdf";
 
 const Navbar = ({toggleMenu, menuOpen}) => {
   // const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = ({toggleMenu, menuOpen}) => {
         <li className="dropdown">
           <Link to="#" onClick={e => e.preventDefault()}>About</Link>
           <ul className="dropdown-menu">
-            <li><Link to="/about/policies">Policies</Link></li>
+            <li><Link to="/policies">Policies</Link></li>
             <li><Link to="/about/mission">Mission</Link></li>
             <li><Link to="/about/founders-message">Founders Message</Link></li>
             <li><Link to="/about/managing-director-message">MD Message</Link></li>
@@ -32,7 +33,7 @@ const Navbar = ({toggleMenu, menuOpen}) => {
         </li>
         <li><Link to="/awards" onClick={toggleMenu}>Awards</Link></li>
         <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
-        <li><a href="/path/to/company-profile.pdf" download>Company Profile</a></li>
+        <li><a href={profilePDF} download>Company Profile</a></li>
       </ul>
     </nav>
   );
