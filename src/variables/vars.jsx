@@ -1,4 +1,7 @@
-import founders from "../assets/profilePics/william.jpg";
+import founders from "../assets/imgs/profilePics/william.jpg";
+import introVid from "../assets/vids/2024-06.mp4";
+
+export const introVideo = introVid;
 
 export const founderMsg = {
   title: "Founder & MD's message",
@@ -8,6 +11,19 @@ export const founderMsg = {
   position: "Co-Founder and Managing Director",
   profileImg: founders,
 };
+
+export const Mission_Vision = {
+  title: "Mission & Vision",
+  content:
+    "Our company is guided and reminded constantly of the vision laid by the founders of this organically grown company. This vision identifies our aspirations and outlines our key differentiators.",
+  Bullets: [
+    "Offer a challenging and a dynamic work environment for our employees, where they challenge each other to get better while maintaining the interests of the company and the common goal.",
+    "Be at the forefront of developing innovative solutions to the challenges that impact our business and the environment.",
+    "Create a legacy of positive social, economic, and physical impacts for all stakeholders.",
+    "Sustain and enhance our already pre-eminent reputation within the industry.",
+  ],
+};
+
 export const DirectorPolicies = {
   title: "This approach is based on the following’s principles:",
   Bullets: [
@@ -23,33 +39,24 @@ export const DirectorPolicies = {
   author: "Syed Azhar Ali",
   position: "Director",
 };
+
 export const QHSE_Policy = {
   title: "QHSE Policy",
   content:
     "AZ Engineers develop their activities in the industrial engineering, construction and maintenance market and infrastructures, industry, transport, services, and communication sectors. AZ Engineers provides global solutions to the satisfaction of its customers, who identify the company by the high level of quality and service offered. These solutions allow value to be created for ‘shareholders and employees, ensuring its international and future projection and the profitability of its investments. AZ Engineers aims to be an international benchmark in industrial engineering and construction and for high added value infrastructures that contribute to sustainable development.",
 };
+
 export const HSE_Policy = {
   title: "HSE Policy",
   content:
     "It is the policy of AZEP to provide, maintain and improve as far as possible safety, health, environmental conditions of its operating sites, to instill in every employee safe working habits and attitudes and provide the necessary training and awareness of rules and discipline for safe working conditions on the job. We ensure that all work is planned safely, and all the necessary actions are taken appropriately to promote good health, prevent injuries and ill health or any adverse effects to employees and other individuals who may be affected by our activities. The Management holds the overall responsibility for health and safety management and giving it an equal priority along with other business attributes. To support this, adequate resources is provided to all the employees.<br><br>However, it is the responsibility of all to understand their role in implementing this policy and comply with all requirements. Disagreements or willful violations of this policy by employees at any level may be considered as a cause for disciplinary action. The organisation strives to improve the Health and Safety Management and performance though establishing, implementing and continuously monitoring risk assessment, work permits, safe working procedures, emergency response plan, housekeeping, waste management and pollution control. Every attempt shall be made to comply with the specifications as per Client’s site regulations, Federal and Local Authorities Rules. Ensuring that Hazard identification and risk assessment are done for all activities.",
 };
-export const Mission_Vision = {
-  title: "Mission & Vision",
-  content:
-    "Our company is guided and reminded constantly of the vision laid by the founders of this organically grown company. This vision identifies our aspirations and outlines our key differentiators.",
-  Bullets: [
-    "Offer a challenging and a dynamic work environment for our employees, where they challenge each other to get better while maintaining the interests of the company and the common goal.",
-    "Be at the forefront of developing innovative solutions to the challenges that impact our business and the environment.",
-    "Create a legacy of positive social, economic, and physical impacts for all stakeholders.",
-    "Sustain and enhance our already pre-eminent reputation within the industry.",
-  ],
-};
+
 export const hist = {
   title: "History",
-  content: "The history of AZ Engineers is one of energy, passion, ambition, people, and teamwork. With origins stretching from 1990, the company was established in Pakistan by two young aspiring engineers, Syed Haris Ali & Shahzad Ashraf. Since then, through dedication, hard work and goodwill, the company has grown into a multinational organization leaving footprints in Libya, Iraq, Bahrain Oman, and Pakistan. Over its 30+ years of history, the company has delivered some of the most iconic construction projects in the MENA (Middle East & North Africa) region.<br><strong>AZ Engineers</strong> has undertaken projects in Pakistan, Libya, South Africa, Iraq, Bahrain and Sultanate of Oman. The Company has its head office in Pakistan and branch offices in Sultanate of Oman and South Africa.",
+  content:
+    "The history of AZ Engineers is one of energy, passion, ambition, people, and teamwork. With origins stretching from 1990, the company was established in Pakistan by two young aspiring engineers, Syed Haris Ali & Shahzad Ashraf. Since then, through dedication, hard work and goodwill, the company has grown into a multinational organization leaving footprints in Libya, Iraq, Bahrain Oman, and Pakistan. Over its 30+ years of history, the company has delivered some of the most iconic construction projects in the MENA (Middle East & North Africa) region.<br><strong>AZ Engineers</strong> has undertaken projects in Pakistan, Libya, South Africa, Iraq, Bahrain and Sultanate of Oman. The Company has its head office in Pakistan and branch offices in Sultanate of Oman and South Africa.",
 };
-// {title:"", content:"", author:"", position:"",}
-// {title:"", content:"", author:"", position:"",}
 
 export const coreValues = [
   {
@@ -102,3 +109,6 @@ export const contactInfo = {
     Href: "https://maps.app.goo.gl/whogSJbMuNm6fFpU8",
   },
 };
+
+export const mapLink =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6061248089254!2d58.334718699999996!3d23.582585599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8e0008a9ff9a05%3A0x546c6ab25880ce97!2zQVogRW5naW5lZXJzICYgUGFydG5lcnMgTC5MLkMgT21hbiDYp9mE2YXZh9mG2K_Ys9mK2YYg2KfZiiDYstivINmIINi02LHZg9in2KbZh9mF!5e0!3m2!1sen!2som!4v1722684582629!5m2!1sen!2som";

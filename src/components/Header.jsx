@@ -1,8 +1,8 @@
 // components/Header.js
 import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/logos/Horizontal_Logo_No_BG.png";
+import logo from "../assets/imgs/logos/Horizontal_Logo_No_BG.png";
 import "./style/Header.css";
 import Navbar from "./Navbar";
 
@@ -19,11 +19,20 @@ const Header = () => {
     const viewportHeight = window.innerHeight;
     setScrolled(scrollTop > viewportHeight / 3);
   };
-
+  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    // Only scroll to top if there is no hash in the location
+    if (!hash) {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
 
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>

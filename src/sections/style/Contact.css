@@ -42,14 +42,3 @@
 .contact-info a:hover {
   text-decoration: underline;
 }
-
-.map-container {
-  flex: 1;
-  max-width: 700px;
-  position: relative;
-}
-
-.map-container iframe {
-  border: 0;
-  border-radius: 8px;
-}

@@ -14,12 +14,18 @@ const Policies = () => {
   return (
     <div className="policies-container">
       <div className="headGap"></div>
-      <Policy {...founderMsg} />
+      <Policy {...Object.assign({}, founderMsg, {idName: "FounderMsg"})} />
+      <Policy {...Object.assign({}, Mission_Vision, {idName: "Mission"})} />
+      <Policy {...Object.assign({}, hist, {idName: "History"})} />
+      <Policy {...Object.assign({}, HSE_Policy, {idName: "HSEPolicy"})} />
+      <Policy {...Object.assign({}, QHSE_Policy, {idName: "QHSEPolicy"})} />
+      <Policy {...Object.assign({}, DirectorPolicies, {idName: "Priciples"})} />
+{/*       
       <Policy {...hist} />
       <Policy {...HSE_Policy} />
       <Policy {...QHSE_Policy} />
-      <Policy {...Mission_Vision} />
-      <Policy {...DirectorPolicies} />
+      <Policy {...Mission_Vision} /> 
+      <Policy {...DirectorPolicies} /> */}
     </div>
   );
 };

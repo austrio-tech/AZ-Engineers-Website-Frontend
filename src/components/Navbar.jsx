@@ -17,10 +17,10 @@ const Navbar = ({toggleMenu, menuOpen}) => {
         <li className="dropdown">
           <Link to="#" onClick={e => e.preventDefault()}>About</Link>
           <ul className="dropdown-menu">
-            <li><Link to="/policies">Policies</Link></li>
-            <li><Link to="/about/mission">Mission</Link></li>
-            <li><Link to="/about/founders-message">Founders Message</Link></li>
-            <li><Link to="/about/managing-director-message">MD Message</Link></li>
+            <li><Link to="/policies#HSEPolicy">Policies</Link></li>
+            <li><Link to="/policies#Mission">Mission</Link></li>
+            <li><Link to="/policies#FounderMsg">Founders Message</Link></li>
+            <li><Link to="/policies#FounderMsg">MD Message</Link></li>
             <li><Link to="/about/certificates">Certificates</Link></li>
           </ul>
         </li>
