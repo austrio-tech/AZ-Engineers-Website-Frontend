@@ -27,7 +27,7 @@ const Policy = ({
   }, [location]);
 
   return (
-    <div className="content-section" id={idName}>
+    <div className="content-section justify" id={idName}>
       <h2 className="content-title">{title}</h2>
       <p
         className="content-paragraph"

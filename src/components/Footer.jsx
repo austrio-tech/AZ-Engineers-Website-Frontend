@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-col">
             <h4>About Us</h4>
-            <p>
+            <p className="justify">
               We Provide Construction Services in Oman major cities. Our
               services include Data Centers & Multi-story Building Construction,
               Roadworks, Bridges and Underpasses, Box Culverts and Rigid
@@ -25,13 +25,13 @@ const Footer = () => {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="/about">About Us</a>
+                <a href="/Policies">Our Policies</a>
               </li>
               <li>
-                <a href="/services">Services</a>
+                <a href="/certificates">Awards & Certificates</a>
               </li>
               <li>
-                <a href="/projects">Projects</a>
+                <a href="/projects">Our Projects</a>
               </li>
               <li>
                 <a href="/contact">Contact Us</a>

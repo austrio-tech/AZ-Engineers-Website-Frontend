@@ -31,9 +31,24 @@
   text-shadow: 1px 1px 4px black;
 }
 
+.justify{
+  text-align: justify;
+}
+
 h1,
 h2 {
   color: #333;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--primary-color);
+}
+Link:hover{
+  color: var(--primary-color);
 }
 
 *:focus-visible {

@@ -10,9 +10,11 @@ import award8 from "../assets/certs_awards/OMAN_GULF_COMPANY.jpg";
 import award9 from "../assets/certs_awards/ASSAUD_NATIONAL_LLC.jpg";
 import award10 from "../assets/certs_awards/ISO_9001_2015.png";
 import award11 from "../assets/certs_awards/ISO_45001_2018.png";
-// import introVid from "../assets/vids/2024-06.mp4";
+import introVid from "../assets/vids/IntroVideo.mp4";
+import profilePDF from "../assets/pdfs/AZEP Profile 2023.pdf";
 
-// export const introVideo = introVid;
+export const introVideo = introVid;
+export const ProfilePDF = {nameFile : "AZEP Profile 2023.pdf", file:profilePDF}
 
 export const founderMsg = {
   title: "Founder & MD's message",
