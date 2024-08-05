@@ -27,6 +27,10 @@
   height: var(--header-height);
 }
 
+.shadowText{
+  text-shadow: 1px 1px 4px black;
+}
+
 h1,
 h2 {
   color: #333;

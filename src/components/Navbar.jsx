@@ -21,7 +21,7 @@ const Navbar = ({toggleMenu, menuOpen}) => {
             <li><Link to="/policies#Mission">Mission</Link></li>
             <li><Link to="/policies#FounderMsg">Founders Message</Link></li>
             <li><Link to="/policies#FounderMsg">MD Message</Link></li>
-            <li><Link to="/about/certificates">Certificates</Link></li>
+            <li><Link to="/certificates">Certificates</Link></li>
           </ul>
         </li>
         <li className="dropdown">
@@ -31,7 +31,7 @@ const Navbar = ({toggleMenu, menuOpen}) => {
             <li><Link to="/projects/current">Current Projects</Link></li>
           </ul>
         </li>
-        <li><Link to="/awards" onClick={toggleMenu}>Awards</Link></li>
+        <li><Link to="/certificates" onClick={toggleMenu}>Awards</Link></li>
         <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
         <li><a href={profilePDF} download>Company Profile</a></li>
       </ul>

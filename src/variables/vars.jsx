@@ -1,7 +1,18 @@
 import founders from "../assets/imgs/profilePics/william.jpg";
-import introVid from "../assets/vids/2024-06.mp4";
+import award1 from "../assets/certs_awards/NESPAK.jpg";
+import award2 from "../assets/certs_awards/NESPP_LLC.jpg";
+import award3 from "../assets/certs_awards/AL_MANARAH.jpg";
+import award4 from "../assets/certs_awards/RENARDET_SA_&_PARTNERS_CONSULTING_ENGINEERING_LLC.jpg";
+import award5 from "../assets/certs_awards/STFA-POLAT_JV.jpg";
+import award6 from "../assets/certs_awards/PARSONS.jpg";
+import award7 from "../assets/certs_awards/SHANFARI_&_PARTNERS_CO_LLC.jpg";
+import award8 from "../assets/certs_awards/OMAN_GULF_COMPANY.jpg";
+import award9 from "../assets/certs_awards/ASSAUD_NATIONAL_LLC.jpg";
+import award10 from "../assets/certs_awards/ISO_9001_2015.png";
+import award11 from "../assets/certs_awards/ISO_45001_2018.png";
+// import introVid from "../assets/vids/2024-06.mp4";
 
-export const introVideo = introVid;
+// export const introVideo = introVid;
 
 export const founderMsg = {
   title: "Founder & MD's message",
@@ -112,3 +123,17 @@ export const contactInfo = {
 
 export const mapLink =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6061248089254!2d58.334718699999996!3d23.582585599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8e0008a9ff9a05%3A0x546c6ab25880ce97!2zQVogRW5naW5lZXJzICYgUGFydG5lcnMgTC5MLkMgT21hbiDYp9mE2YXZh9mG2K_Ys9mK2YYg2KfZiiDYstivINmIINi02LHZg9in2KbZh9mF!5e0!3m2!1sen!2som!4v1722684582629!5m2!1sen!2som";
+
+export const awards = [
+  { name: "NESPAK", img: award1 },
+  { name: "NESPP LLC", img: award2 },
+  { name: "AL MANARAH", img: award3 },
+  { name: "RENARDET SA & PARTNERS CONSULTING ENGINEERING LLC", img: award4 },
+  { name: "STFA-POLAT JV", img: award5 },
+  { name: "PARSONS", img: award6 },
+  { name: "SHANFARI & PARTNERS LLC", img: award7 },
+  { name: "OMAN GULF COMAPNY", img: award8 },
+  { name: "A'SSAUD NATIONAL LLC", img: award9 },
+  { name: "ISO:9001 (2015)", img: award10 },
+  { name: "ISO:45001 (2018)", img: award11 },
+];

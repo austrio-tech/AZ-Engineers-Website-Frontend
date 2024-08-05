@@ -17,7 +17,7 @@ const Header = () => {
   const handleScroll = () => {
     const scrollTop = window.scrollY;
     const viewportHeight = window.innerHeight;
-    setScrolled(scrollTop > viewportHeight / 3);
+    setScrolled(scrollTop > viewportHeight / 6);
   };
   
   useEffect(() => {
