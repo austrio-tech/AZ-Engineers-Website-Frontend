@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import IntroVideo from "../sections/IntroVideo";
 import CoreValuesSection from "../sections/CoreValuesSection";
-import Contact from "../sections/Contact";
+import Contact from "../sections/ContactSection";
 import "./style/Home.css";
 
 const Home = () => {

@@ -1,16 +1,22 @@
 .contact-form {
-  width: 40vw;
-  background: #f9f9f9;
+  background: #9d9d9d;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
+.w45{
+  width: 45vw;
+}
+.w40{
+  width: 40vw;
+}
 
 .contact-form h3 {
   font-size: 2em;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 2px black;
 }
 
 .form-group {

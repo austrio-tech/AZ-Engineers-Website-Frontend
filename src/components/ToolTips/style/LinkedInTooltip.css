@@ -68,8 +68,11 @@
   border-color: #1da1f2;
   font-size: 24px;
   font-weight: bold;
-  text-shadow: 3px 3px 6px black, -3px -3px 6px black, 1px 1px 1px black,
-    -1px -1px 1px black;
+  text-shadow: 
+  /* 4px 4px 10px var(--secondary-color),
+    -4px -4px 10px var(--secondary-color),  */
+    2px 2px 2px black;
+    /* -1px -1px 2px var(--primary-color); */
 }
 
 .icon:hover.layer span {

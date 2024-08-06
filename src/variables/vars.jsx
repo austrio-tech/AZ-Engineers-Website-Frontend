@@ -119,8 +119,16 @@ export const contactInfo = {
     Value: "info@azengineers.com",
     Href: "mailto:info@azengineers.com",
   },
-  phone1: { Value: "+968 244 955 94", Href: "tel:+96824495594" },
-  phone2: { Value: "+968 244 955 98", Href: "tel:+96824495598" },
+  emailCareers: {
+    Value: "jobs@azengineers.com",
+    Href: "mailto:jobs@azengineers.com",
+  },
+  emailTender: {
+    Value: "tenders@azengineers.com",
+    Href: "mailto:tenders@azengineers.com",
+  },
+  phone1: { Value: "(+968) 244 955 94", Href: "tel:+96824495594" },
+  phone2: { Value: "(+968) 244 955 98", Href: "tel:+96824495598" },
   address: {
     Value:
       "Office No. 31 & 34 Building 1/344 Jami Al Akbar Street Ghala Industrial Area Bousher Muscat Sultanate Of Oman",
@@ -129,7 +137,7 @@ export const contactInfo = {
 };
 
 export const mapLink =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6061248089254!2d58.334718699999996!3d23.582585599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8e0008a9ff9a05%3A0x546c6ab25880ce97!2zQVogRW5naW5lZXJzICYgUGFydG5lcnMgTC5MLkMgT21hbiDYp9mE2YXZh9mG2K_Ys9mK2YYg2KfZiiDYstivINmIINi02LHZg9in2KbZh9mF!5e0!3m2!1sen!2som!4v1722684582629!5m2!1sen!2som";
+  "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5827.715993654052!2d58.33471900000001!3d23.582586!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8e0008a9ff9a05%3A0x546c6ab25880ce97!2zQVogRW5naW5lZXJzICYgUGFydG5lcnMgTC5MLkMgT21hbiDYp9mE2YXZh9mG2K_Ys9mK2YYg2KfZiiDYstivINmIINi02LHZg9in2KbZh9mF!5e1!3m2!1sen!2som!4v1722951797910!5m2!1sen!2som";
 
 export const awards = [
   { name: "NESPAK", img: award1 },

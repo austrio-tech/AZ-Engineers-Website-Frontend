@@ -1,4 +1,4 @@
-/* Contact.css */
+/* Contact.css
 .contact {
     padding: 60px 0;
 }
@@ -28,4 +28,15 @@
 
 .contact form button:hover {
     background-color: #555;
+} */
+
+.contactInfos{
+    margin-right: 20px;
+    width:35vw;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #b4b4b4;
+}
+.mapContainer{
+    margin: 20px 0;
 }
