@@ -27,12 +27,25 @@
   height: var(--header-height);
 }
 
-.shadowText{
+.shadowText {
   text-shadow: 1px 1px 4px black;
 }
 
-.justify{
+.justify {
   text-align: justify;
+}
+
+.fit {
+  width: fit-content;
+}
+
+.inlineTab {
+  display: inline-table;
+}
+
+.myFlex {
+  display: flex;
+  justify-content: space-between;
 }
 
 h1,
@@ -40,14 +53,14 @@ h2 {
   color: #333;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: var(--primary-color);
 }
-Link:hover{
+Link:hover {
   color: var(--primary-color);
 }
 

@@ -1,5 +1,5 @@
 /* From Uiverse.io by vikas7754 */
-.tooltip-container {
+.LinkedIn-tooltip-container {
   position: relative;
   cursor: pointer;
   transition: all 0.2s;
@@ -7,11 +7,12 @@
   border-radius: 10px;
 }
 
-.tooltip {
+.LinkedIn-tooltip {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 40%;
+  width: 250px;
+  transform: translateX(-40%);
   padding: 10px;
   opacity: 0;
   pointer-events: none;
@@ -29,8 +30,8 @@
   border: 1px solid rgba(11, 63, 95, 1);
 }
 
-.tooltip-container:hover .tooltip {
-  top: -150px;
+.LinkedIn-tooltip-container:hover .LinkedIn-tooltip {
+  top: -180px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -55,7 +56,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  /* width: 100%; */
+  width: inherit;
   border: 1px solid #fff;
   border-radius: 5px;
   transition: all 0.3s;
@@ -65,6 +66,10 @@
 .text {
   color: #1da1f2;
   border-color: #1da1f2;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 3px 3px 6px black, -3px -3px 6px black, 1px 1px 1px black,
+    -1px -1px 1px black;
 }
 
 .icon:hover.layer span {
@@ -80,7 +85,7 @@
   transition: bottom 0.3s ease, opacity 0.3s ease;
 }
 .icon:hover .text {
-  bottom: -35px;
+  bottom: -40px;
   opacity: 1;
 }
 
@@ -104,6 +109,12 @@
   transform: translate(20px, -20px);
 }
 
+.fa-linkedin::before {
+  content: "" !important;
+}
+.top {
+  z-index: 20;
+}
 .layer span.fab {
   font-size: 30px;
   line-height: 64px;
@@ -114,6 +125,11 @@
 .user {
   display: flex;
   gap: 10px;
+}
+.logoImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
 }
 .img {
   width: 50px;

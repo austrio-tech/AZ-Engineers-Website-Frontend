@@ -31,7 +31,7 @@ const ImageGallery = ({ images }) => {
           <div key={index} className="image-container" onClick={() => handleImageClick(index)}>
             <img src={image.img} alt={image.name} className="image" />
             <div className="overlay">
-              <div className="text">{image.name}</div>
+              <div className="Imagetext">{image.name}</div>
             </div>
           </div>
         ))}

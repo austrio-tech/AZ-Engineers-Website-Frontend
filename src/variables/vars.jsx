@@ -1,4 +1,6 @@
 import founders from "../assets/imgs/profilePics/william.jpg";
+import vertLogo from "../assets/imgs/logos/Vertical Logo_001.png";
+
 import award1 from "../assets/certs_awards/NESPAK.jpg";
 import award2 from "../assets/certs_awards/NESPP_LLC.jpg";
 import award3 from "../assets/certs_awards/AL_MANARAH.jpg";
@@ -10,11 +12,14 @@ import award8 from "../assets/certs_awards/OMAN_GULF_COMPANY.jpg";
 import award9 from "../assets/certs_awards/ASSAUD_NATIONAL_LLC.jpg";
 import award10 from "../assets/certs_awards/ISO_9001_2015.png";
 import award11 from "../assets/certs_awards/ISO_45001_2018.png";
-import introVid from "../assets/vids/IntroVideo.mp4";
+import introVid from "../assets/vids/2024-06.mp4";
 import profilePDF from "../assets/pdfs/AZEP Profile 2023.pdf";
 
 export const introVideo = introVid;
-export const ProfilePDF = {nameFile : "AZEP Profile 2023.pdf", file:profilePDF}
+export const ProfilePDF = {
+  nameFile: "AZEP Profile 2023.pdf",
+  file: profilePDF,
+};
 
 export const founderMsg = {
   title: "Founder & MD's message",
@@ -139,3 +144,14 @@ export const awards = [
   { name: "ISO:9001 (2015)", img: award10 },
   { name: "ISO:45001 (2018)", img: award11 },
 ];
+
+export const socials = {
+  LinkedIn: {
+    link: "https://www.linkedin.com/company/az-engineers-&-partners-l.l.c./",
+    username: "@az-engineers-&-partners-l.l.c.",
+    name: "AZ Engineers & Partners L.L.C.",
+    followers: "8K+ followers",
+    profilePic: vertLogo,
+  },
+  Facebook: "https://www.facebook.com/azengineers/",
+};

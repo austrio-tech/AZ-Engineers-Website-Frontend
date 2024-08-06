@@ -1,23 +1,26 @@
 import React from "react";
+import { socials } from "../../variables/vars";
 import "./style/LinkedInTooltip.css";
 
 const LinkedInTooltip = ({ children, profileImage }) => {
   return (
-    <div class="tooltip-container">
-      <div class="tooltip">
+    <div class="LinkedIn-tooltip-container">
+      <div class="LinkedIn-tooltip">
         <div class="profile">
           <div class="user">
-            <div class="img">Ui</div>
+            <div class="img">
+              <img src={socials.LinkedIn.profilePic} alt="UI" class="logoImg"/>
+            </div>
             <div class="details">
-              <div class="name">User</div>
-              <div class="username">@username</div>
+              <div class="name">{socials.LinkedIn.name}</div>
+              <div class="username">{socials.LinkedIn.username}</div>
             </div>
           </div>
-          <div class="about">500+ Connections</div>
+          <div class="about">{socials.LinkedIn.followers}</div>
         </div>
       </div>
       <div class="text">
-        <a class="icon" href="https://freecodez.com/">
+        <a class="icon top" href={socials.LinkedIn.link}>
           <div class="layer">
             <span></span>
             <span></span>
