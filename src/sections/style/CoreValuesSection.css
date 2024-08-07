@@ -41,6 +41,7 @@
 }
 .card:hover {
   box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
 }
 
 .card p {

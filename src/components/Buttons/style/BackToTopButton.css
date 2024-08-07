@@ -19,5 +19,6 @@
 }
 
 .back-to-top button:hover {
-  background-color: #555;
+  background-color: transparent;
+  color: var(--secondary-color);
 }

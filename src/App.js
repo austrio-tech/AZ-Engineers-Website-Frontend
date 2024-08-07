@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Policies from "./pages/Policies";
 import Contact from "./pages/Contact";
 import Certificates from "./pages/Certificates";
+import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 import BackToTopButton from "./components/Buttons/BackToTopButton";
 import "./variables/GLOB_VARS.css";
@@ -21,6 +22,8 @@ function App() {
           <Route path="/policies" element={<Policies />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/certificates" element={<Certificates />} />
+          <Route path="/projects/completed" element={<Projects />} />
+          <Route path="/projects/current" element={<Projects current={true} />} />
         </Routes>
         <Footer />
         <BackToTopButton />

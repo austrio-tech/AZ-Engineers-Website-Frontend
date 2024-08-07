@@ -3,7 +3,10 @@
   --primary-color: #dfab27;
   --secondary-color: #143cbd;
   --background-color: #f1f1ea;
+  --primary-color-light: #dfab2788;
+  --secondary-color-light: #143cbd88;
   --heading-color: #08a571;
+  --heading-color-light: #08a57188;
   --text-color: #333;
   --header-height: 85px;
   --bullet-blue: url("../assets/imgs/bullets/blue_bullet.png");
