@@ -10,7 +10,7 @@
 
 .content-title {
   font-size: 2em;
-  color: #2c3e50;
+  color: var(--secondary-color);
   margin-bottom: 10px;
 }
 

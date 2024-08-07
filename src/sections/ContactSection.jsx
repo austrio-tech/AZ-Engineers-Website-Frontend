@@ -28,6 +28,7 @@ const ContactSection = () => {
             </p>
             <MapLocation />
           </div>
+
           <ContactUsForm />
         </div>
       </div>

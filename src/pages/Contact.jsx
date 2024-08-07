@@ -16,7 +16,9 @@ const Contact = () => {
         <div className="contactInfos shadow">
           <ContactInfo extras={true} />
         </div>
-        <ContactUsForm paged={true} />
+        <div className="contactForm">
+          <ContactUsForm paged={true} />
+        </div>
       </div>
       <div className="mapContainer">
         <MapLocation />

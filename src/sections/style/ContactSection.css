@@ -20,12 +20,14 @@
   flex: 1;
   max-width: 500px;
   text-align: left;
+  border-radius: 10px;
+  /* box-shadow: 0 0 2px black; */
 }
 
 .contact-info h3 {
   font-size: 2em;
-  margin-bottom: 15px;
-  color: #333;
+  padding: 20px 0;
+  /* color: #333; */
 }
 
 .contact-info p {
@@ -34,11 +36,19 @@
   color: #555;
 }
 
-.contact-info a {
+.contact-info strong{
+  color: var(--primary-color);
+  /* text-shadow: 0 0 1px black; */
+}
+
+/* .contact-info a {
   color: #007bff;
   text-decoration: none;
-}
+} */
 
 /* .contact-info a:hover {
   text-decoration: underline;
 } */
+.jsjs{
+  box-shadow: 0 0 2px black;
+}
