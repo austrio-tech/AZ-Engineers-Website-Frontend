@@ -43,21 +43,21 @@ const Home = () => {
     };
   }, []);
   return (
-    <div className="home bg2">
+    <div className="home bg1">
       <Fade right>
         <img src={certBanner} alt="Fixed" className="fixed-image" />
       </Fade>
       <Fade bottom>
         <IntroVideo />
       </Fade>
-      <div className="lilGap bg2" />
+      <div className="lilGap bg1" />
       <Fade bottom>
-        <div className="bg2">
+        <div className="bg1">
           <CoreValuesSection />
         </div>
       </Fade>
       <Fade bottom>
-        <div className="bg1">
+        <div className="bg2">
           <Contact />
         </div>
       </Fade>
