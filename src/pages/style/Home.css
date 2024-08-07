@@ -1,4 +1,23 @@
-/* Home.css */
 .home {
-    padding: 0;
+  padding: 0;
+}
+
+.fixed-image {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 150px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1;
+}
+
+.lilGap{
+    height: 60px;
+}
+.bg1{
+    background-color: var(--section-bg1);
+}
+.bg2{
+    background-color: var(--section-bg2);
 }

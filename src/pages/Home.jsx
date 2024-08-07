@@ -4,6 +4,7 @@ import Fade from "react-reveal/Fade";
 import IntroVideo from "../sections/IntroVideo";
 import CoreValuesSection from "../sections/CoreValuesSection";
 import Contact from "../sections/ContactSection";
+import { certBanner } from "../variables/vars";
 import "./style/Home.css";
 
 const Home = () => {
@@ -42,15 +43,23 @@ const Home = () => {
     };
   }, []);
   return (
-    <div className="home">
+    <div className="home bg2">
+      <Fade right>
+        <img src={certBanner} alt="Fixed" className="fixed-image" />
+      </Fade>
       <Fade bottom>
         <IntroVideo />
       </Fade>
+      <div className="lilGap bg2" />
       <Fade bottom>
-        <CoreValuesSection />
+        <div className="bg2">
+          <CoreValuesSection />
+        </div>
       </Fade>
       <Fade bottom>
-        <Contact />
+        <div className="bg1">
+          <Contact />
+        </div>
       </Fade>
     </div>
   );

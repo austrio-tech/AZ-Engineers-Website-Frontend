@@ -1,5 +1,6 @@
 import founders from "../assets/imgs/profilePics/william.jpg";
 import vertLogo from "../assets/imgs/logos/Vertical Logo_001.png";
+import CertBanner from "../assets/imgs/others/certBanner.png";
 
 import award1 from "../assets/certs_awards/NESPAK.jpg";
 import award2 from "../assets/certs_awards/NESPP_LLC.jpg";
@@ -18,6 +19,8 @@ import profilePDF from "../assets/pdfs/AZEP Profile 2023.pdf";
 
 import completedProjects from "../assets/data/CompletedProjects.csv";
 import currentProjects from "../assets/data/CurrentProjects.csv";
+
+export const certBanner = CertBanner;
 
 export const introVideo = introVid;
 export const ProfilePDF = {
