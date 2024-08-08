@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./style/ImageGallery.css";
 
 const ImageGallery = ({ images }) => {
@@ -12,17 +12,17 @@ const ImageGallery = ({ images }) => {
     setSelectedImageIndex(null);
   };
 
-  const showPreviousImage = () => {
+  const showPreviousImage = useCallback(() => {
     setSelectedImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
-  };
+  }, [images.length]);
 
-  const showNextImage = () => {
+  const showNextImage = useCallback(() => {
     setSelectedImageIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
-  };
+  }, [images.length]);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -42,7 +42,7 @@ const ImageGallery = ({ images }) => {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [selectedImageIndex, images.length]);
+  }, [selectedImageIndex, images.length, showNextImage, showPreviousImage]);
 
   return (
     <div>
