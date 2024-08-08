@@ -4,6 +4,7 @@ import Fade from "react-reveal/Fade";
 import IntroVideo from "../sections/IntroVideo";
 import CoreValuesSection from "../sections/CoreValuesSection";
 import Contact from "../sections/ContactSection";
+import { Link } from "react-router-dom";
 import { certBanner } from "../variables/vars";
 import "./style/Home.css";
 
@@ -44,9 +45,11 @@ const Home = () => {
   }, []);
   return (
     <div className="home bg1">
-      <Fade right>
-        <img src={certBanner} alt="Fixed" className="fixed-image" />
-      </Fade>
+      <Link to={"/certificates"}>
+        <Fade right>
+          <img src={certBanner} alt="Fixed" className="fixed-image" />
+        </Fade>
+      </Link>
       <Fade bottom>
         <IntroVideo />
       </Fade>

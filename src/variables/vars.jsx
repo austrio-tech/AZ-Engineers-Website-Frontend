@@ -77,10 +77,32 @@ export const HSE_Policy = {
     "It is the policy of AZEP to provide, maintain and improve as far as possible safety, health, environmental conditions of its operating sites, to instill in every employee safe working habits and attitudes and provide the necessary training and awareness of rules and discipline for safe working conditions on the job. We ensure that all work is planned safely, and all the necessary actions are taken appropriately to promote good health, prevent injuries and ill health or any adverse effects to employees and other individuals who may be affected by our activities. The Management holds the overall responsibility for health and safety management and giving it an equal priority along with other business attributes. To support this, adequate resources is provided to all the employees.<br><br>However, it is the responsibility of all to understand their role in implementing this policy and comply with all requirements. Disagreements or willful violations of this policy by employees at any level may be considered as a cause for disciplinary action. The organisation strives to improve the Health and Safety Management and performance though establishing, implementing and continuously monitoring risk assessment, work permits, safe working procedures, emergency response plan, housekeeping, waste management and pollution control. Every attempt shall be made to comply with the specifications as per Client’s site regulations, Federal and Local Authorities Rules. Ensuring that Hazard identification and risk assessment are done for all activities.",
 };
 
+export const contactInfo = {
+  emailContact: {
+    Value: "info@azengineers.com",
+    Href: "mailto:info@azengineers.com",
+  },
+  emailCareers: {
+    Value: "jobs@azengineers.com",
+    Href: "mailto:jobs@azengineers.com",
+  },
+  emailTender: {
+    Value: "tenders@azengineers.com",
+    Href: "mailto:tenders@azengineers.com",
+  },
+  phone1: { Value: "(+968) 244 955 94", Href: "tel:+96824495594" },
+  phone2: { Value: "(+968) 244 955 98", Href: "tel:+96824495598" },
+  address: {
+    Value:
+      "Office No. 31 & 34 Building 1/344 Jami Al Akbar Street Ghala Industrial Area Bousher Muscat Sultanate Of Oman",
+    Href: "https://maps.app.goo.gl/whogSJbMuNm6fFpU8",
+  },
+};
+
 export const hist = {
   title: "History",
   content:
-    "The history of AZ Engineers is one of energy, passion, ambition, people, and teamwork. With origins stretching from 1990, the company was established in Pakistan by two young aspiring engineers, Syed Haris Ali & Shahzad Ashraf. Since then, through dedication, hard work and goodwill, the company has grown into a multinational organization leaving footprints in Libya, Iraq, Bahrain Oman, and Pakistan. Over its 30+ years of history, the company has delivered some of the most iconic construction projects in the MENA (Middle East & North Africa) region.<br><strong>AZ Engineers</strong> has undertaken projects in Pakistan, Libya, South Africa, Iraq, Bahrain and Sultanate of Oman. The Company has its head office in Pakistan and branch offices in Sultanate of Oman and South Africa.",
+    `The history of AZ Engineers is one of energy, passion, ambition, people, and teamwork. With origins stretching from 1990, the company was established in Pakistan by two young aspiring engineers, Syed Haris Ali & Shahzad Ashraf. Since then, through dedication, hard work and goodwill, the company has grown into a multinational organization leaving footprints in Libya, Iraq, Bahrain Oman, and Pakistan. Over its 30+ years of history, the company has delivered some of the most iconic construction projects in the MENA (Middle East & North Africa) region.<br><strong>AZ Engineers</strong> has undertaken projects in Pakistan, Libya, South Africa, Iraq, Bahrain and Sultanate of Oman. The Company has its head office in <a href=${contactInfo.address.Href}>Muscat, Sultanate of Oman</a>.`,
 };
 
 export const coreValues = [
@@ -120,28 +142,6 @@ export const coreValues = [
     index: 0,
   },
 ];
-
-export const contactInfo = {
-  emailContact: {
-    Value: "info@azengineers.com",
-    Href: "mailto:info@azengineers.com",
-  },
-  emailCareers: {
-    Value: "jobs@azengineers.com",
-    Href: "mailto:jobs@azengineers.com",
-  },
-  emailTender: {
-    Value: "tenders@azengineers.com",
-    Href: "mailto:tenders@azengineers.com",
-  },
-  phone1: { Value: "(+968) 244 955 94", Href: "tel:+96824495594" },
-  phone2: { Value: "(+968) 244 955 98", Href: "tel:+96824495598" },
-  address: {
-    Value:
-      "Office No. 31 & 34 Building 1/344 Jami Al Akbar Street Ghala Industrial Area Bousher Muscat Sultanate Of Oman",
-    Href: "https://maps.app.goo.gl/whogSJbMuNm6fFpU8",
-  },
-};
 
 export const mapLink =
   "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5827.715993654052!2d58.33471900000001!3d23.582586!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8e0008a9ff9a05%3A0x546c6ab25880ce97!2zQVogRW5naW5lZXJzICYgUGFydG5lcnMgTC5MLkMgT21hbiDYp9mE2YXZh9mG2K_Ys9mK2YYg2KfZiiDYstivINmIINi02LHZg9in2KbZh9mF!5e1!3m2!1sen!2som!4v1722951797910!5m2!1sen!2som";

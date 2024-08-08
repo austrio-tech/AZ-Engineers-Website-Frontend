@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import "./style/ImageGallery.css";
 
 const ImageGallery = ({ images }) => {
@@ -24,11 +24,35 @@ const ImageGallery = ({ images }) => {
     );
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (selectedImageIndex !== null) {
+        if (event.key === "ArrowLeft") {
+          showPreviousImage();
+        } else if (event.key === "ArrowRight") {
+          showNextImage();
+        } else if (event.key === "Escape") {
+          closeImageView();
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedImageIndex, images.length]);
+
   return (
     <div>
       <div className="gallery">
         {images.map((image, index) => (
-          <div key={index} className="image-container" onClick={() => handleImageClick(index)}>
+          <div
+            key={index}
+            className="image-container"
+            onClick={() => handleImageClick(index)}
+          >
             <img src={image.img} alt={image.name} className="image" />
             <div className="overlay">
               <div className="Imagetext">{image.name}</div>
@@ -41,10 +65,39 @@ const ImageGallery = ({ images }) => {
           <div className="image-header">
             <h2>{images[selectedImageIndex].name}</h2>
           </div>
-          <img src={images[selectedImageIndex].img} alt={images[selectedImageIndex].name} className="large-image" />
-          <span className="close" onClick={closeImageView}>&times;</span>
-          <button className="nav-button left" onClick={(e) => { e.stopPropagation(); showPreviousImage(); }}>&lt;</button>
-          <button className="nav-button right" onClick={(e) => { e.stopPropagation(); showNextImage(); }}>&gt;</button>
+          <img
+            src={images[selectedImageIndex].img}
+            alt={images[selectedImageIndex].name}
+            className="large-image"
+          />
+          <span className="close" onClick={closeImageView}>
+            &times;
+          </span>
+
+          <button
+            className="button-3d nav-button left"
+            onClick={(e) => {
+              e.stopPropagation();
+              showPreviousImage();
+            }}
+          >
+            <div className="button-top">
+              <span className="material-icons">❮</span>
+            </div>
+            <div className="button-bottom"></div>
+          </button>
+          <button
+            className="button-3d nav-button right"
+            onClick={(e) => {
+              e.stopPropagation();
+              showNextImage();
+            }}
+          >
+            <div className="button-top">
+              <span className="material-icons">❯</span>
+            </div>
+            <div className="button-bottom"></div>
+          </button>
         </div>
       )}
     </div>
