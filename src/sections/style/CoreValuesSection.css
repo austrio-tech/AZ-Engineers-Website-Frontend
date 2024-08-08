@@ -1,26 +1,16 @@
 .main-container {
-  display: flex;
-  justify-content: right;
-  /* align-items: center; */
-  padding: 200px 20px 400px 20px;
-  flex-wrap: wrap;
-  gap: 20px; /* Add some spacing between cards */
-  position: relative;
-  /* padding: 20px; */
-  background-color: #f8f8f8;
-  /* height: 80vh; */
+  padding: 50px 0;
+  /* background-color: var(--section-bg1); */
 }
 
-.header-container {
-  flex: 1;
+.headingContainer {
   font-size: 72px;
-  padding-left: 40px;
+  padding-bottom: 40px;
   text-decoration: underline;
   font-weight: bold;
   color: var(--primary-color);
   text-decoration-color: var(--primary-color);
   text-decoration-thickness: 5px;
-  text-align: left;
 }
 .headingTitle {
   color: var(--heading-color);
@@ -30,29 +20,11 @@
   display: inline;
 }
 
-.cards-container {
-  position: relative;
-  flex: 1;
-}
+/* .cards-container {
+  gap: 16px;
+  padding: 16px;
+} */
 
-.card {
-  width: 440px;
-  height: 300px;
-  background: rgba(211, 211, 211, 0.199);
-  position: absolute;
-  /* transition: transform 0.3s ease-in-out, z-index 0.3s ease,
-    box-shadow 0.3s; */
-  cursor: pointer;
-  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
-  transform-origin: left bottom;
-  text-align: left;
-  padding: 25px;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 .cardNumber {
   color: var(--secondary-color);
 }
@@ -69,6 +41,7 @@
 }
 .card:hover {
   box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
 }
 
 .card p {

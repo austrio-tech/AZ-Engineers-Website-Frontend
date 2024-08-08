@@ -1,0 +1,13 @@
+.left {
+  text-align: left;
+}
+.contactsTitle {
+  text-decoration: underline;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 2px black;
+  font-size: 2em;
+  margin: 10px 0;
+}
+.left a {
+  padding-left: 20px;
+}

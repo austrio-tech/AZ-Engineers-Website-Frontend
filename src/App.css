@@ -1,8 +1,13 @@
 /* App.css */
 
-*{
+* {
   padding: 0;
   margin: 0;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard syntax */
+  font-family: "Roboto", sans-serif; /* Google Font - Roboto */
 }
 
 .App {
@@ -15,11 +20,55 @@
   margin: 0 auto;
 }
 
-h1,
-h2 {
-  color: #333;
+.noUnderline * {
+  text-decoration: none;
 }
 
-*:focus-visible{
+.headGap {
+  height: var(--header-height);
+}
+
+.shadowText {
+  text-shadow: 1px 1px 4px black;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.fit {
+  width: fit-content;
+}
+
+.inlineTab {
+  display: inline-table;
+}
+
+.myFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* h1,
+h2 {
+  color: #333;
+} */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--a-color);
+}
+/* .footer a:hover {
+  text-shadow: 0 0 6px white;
+} */
+Link:hover {
+  color: var(--primary-color);
+}
+
+*:focus-visible {
   outline: none;
 }

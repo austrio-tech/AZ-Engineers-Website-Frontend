@@ -1,9 +1,17 @@
 :root {
   /* --primary-color: #ffc631; */
   --primary-color: #dfab27;
-  --secondary-color: #143cbd;
+  --secondary-color: #0b2a8f;
   --background-color: #f1f1ea;
-  --heading-color: #08a571;
-  --text-color: #333;
-  --header-height: 10vh;
+  --primary-color-light: #dfab2788;
+  --secondary-color-light: #0b2a8f88;
+  /* --heading-color: #08a571; */
+  --heading-color: #0b2a8f;
+  --section-bg1: #f8f8f8;
+  --section-bg2: #eee;
+  /* --text-color: #333; */
+  --header-height: 85px;
+  --light-background: #e1e1e1;
+  --a-color: #007bff;
+  --bullet-blue: url("../assets/imgs/bullets/blue_bullet.png");
 }

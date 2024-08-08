@@ -1,0 +1,24 @@
+.DataTableContainer {
+  margin: 20px 0;
+}
+
+.thh {
+  background: #7d7d7d;
+  color: white;
+  font-weight: bold;
+  border: solid 2px var(--secondary-color);
+}
+
+.tabb {
+  border: solid 2px var(--primary-color);
+  width: 100%;
+}
+
+.tdd {
+  padding: 10px;
+  border: solid 1px gray;
+  background: var(--primary-color-light);
+}
+.tdgray {
+  background: var(--secondary-color-light);
+}
