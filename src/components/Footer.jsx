@@ -60,7 +60,7 @@ const Footer = () => {
             <h4>Follow Us</h4>
             <ul className="social-links">
               <li>
-                <a href="/">
+                <a href={socials.LinkedIn.link}>
                   <i className="fab fa-linkedin-in"></i>
                 </a>
               </li>
