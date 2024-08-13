@@ -17,7 +17,7 @@ const BackToTopButton = () => {
   const customScrollToTop = () => {
     const start = window.pageYOffset;
     const duration = 1500;
-    const easingFunction = (t) => t * t * t * t * t; // Quartic easing in
+    const easingFunction = (t) => t**(t**t);
 
     const startTime = performance.now();
 
