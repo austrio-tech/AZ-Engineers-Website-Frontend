@@ -1,7 +1,5 @@
 /* Navbar.css */
 .nav {
-  /* background-color: var(--background-color); */
-  /* color: black; */
   display: flex; /* Display nav items horizontally */
   align-items: center; /* Center align items vertically */
   padding: 0;
@@ -53,10 +51,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
 }
 
-/* .dropdown-menu li {
-  border-bottom: 1px solid var(--primary-color);
-} */
-
 .dropdown-menu li a {
   padding: 15px 15px; /* Horizontal padding for dropdown items */
   color: black;
@@ -65,7 +59,6 @@
 }
 
 .dropdown-menu li a:hover {
-  /* background-color: #555; */
   color: var(--primary-color);
 }
 
@@ -96,5 +89,4 @@
     padding: 10px;
     cursor: pointer;
   }
-
 }

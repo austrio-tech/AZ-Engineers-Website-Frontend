@@ -1,11 +1,9 @@
 .map-container {
-    flex: 1;
-    /* max-width: 700px; */
-    position: relative;
-  }
-  
-  .map-container iframe {
-    border: 0;
-    border-radius: 8px;
-  }
-  
+  flex: 1;
+  position: relative;
+}
+
+.map-container iframe {
+  border: 0;
+  border-radius: 8px;
+}
